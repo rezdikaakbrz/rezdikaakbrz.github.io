@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>KEJI ANAK BAIK</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+body {
+    background: url(wp2202021.jpg) no-repeat;
+}
+
+.login-container {
+            width: 300px;
+            margin: 150px auto;
+            padding: 40px;
+            background: transparent;
+            border-radius: 25px;
+            backdrop-filter: blur();
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .login-container h2 {
+            text-align: center;
+            color:white;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            height: 50px;
+            padding:10px;
+            margin: 15px 0;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(0, 0, 0, 0.2);
+            border-radius: 40px;
+            font-size: 15px;
+        }
+
+        .login-container input::placeholder{
+            color:#fff;
+        }
+
+        .forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: 15px;
+            color:#fff;
+        }
+
+        .forgot label input{
+            accent-color: white;
+            margin-right: 3px;
+        }
+        
+        .forgot a{
+            color:#fff;
+            text-decoration: none;
+        }
+
+        .login-container button {
+            width: 100%;
+            background: #C7BD99;
+            color: black;
+            font-size: 16px;
+            border: none;
+            padding: 10px;
+            border-radius: 25px;
+            border: 2px solid rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .login-container {
+                max-width: 100%;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login-container">
+            <h2>ONLY KEJU</h2>
+            <form id="login-form">
+                <div>
+                    <input type="text" name="username" placeholder="Username" required >
+                    <input type="password" name="password" placeholder="Password" required >
+                </div>
+                <div class="forgot">
+                    <label><Input type="checkbox" required>Remember me? </label>
+                        <a href="#">you now password :) </a>
+                </div>
+                <button type="submit">konfirmasi</button>
+            </form>
+
+            <script>
+                 document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const username = event.target.username.value;
+            const password = event.target.password.value;
+
+            if (username === "jinan lucu" && password === "sikeju2505") {
+                alert("hallo jinan anak baik dan pintar");
+                // Di sini Anda bisa mengarahkan pengguna ke halaman setelah login.
+            } else {
+                alert("dibilangin username password nya harus yang aku kasih.");
+            }
+        });
+            </script>
+        </div>
+    </body>
+</html>
